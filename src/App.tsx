@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import { AssetManagerDrawer } from './components/AssetManagerDrawer';
 import { CaseStudyPage } from './components/CaseStudyPage';
 import { FooterSection } from './components/FooterSection';
 import { HeroSection } from './components/HeroSection';
@@ -13,7 +12,6 @@ import {
   ResumePage,
   WorkArchivePage,
 } from './components/SubPages';
-import { AssetVaultProvider } from './context/AssetVaultContext';
 import { RoutePath } from './types/portfolio';
 
 function parseHashRoute(): RoutePath {
@@ -92,14 +90,11 @@ export default function App() {
   };
 
   return (
-    <AssetVaultProvider>
-      <div className="min-h-screen bg-[#F3EFE6] text-[#111113]">
-        <KineticCursor />
-        {route !== '/resume' && <Navbar currentRoute={route} onNavigate={navigate} />}
-        <main>{renderPage()}</main>
-        {route !== '/resume' && <FooterSection onNavigate={navigate} />}
-        <AssetManagerDrawer />
-      </div>
-    </AssetVaultProvider>
+    <div className="min-h-screen bg-[#F3EFE6] text-[#111113]">
+      <KineticCursor />
+      {route !== '/resume' && <Navbar currentRoute={route} onNavigate={navigate} />}
+      <main>{renderPage()}</main>
+      {route !== '/resume' && <FooterSection onNavigate={navigate} />}
+    </div>
   );
 }

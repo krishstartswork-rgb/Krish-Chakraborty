@@ -23,6 +23,9 @@ export interface AssetSlotSpec {
   aspect: '16:9' | '4:3' | '1:1' | '3:4';
   section: string;
   mediumTag?: string;
+  imageUrl?: string;
+  linkUrl?: string;
+  linkLabel?: string;
 }
 
 export interface CampaignTrack {

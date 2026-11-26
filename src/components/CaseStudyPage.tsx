@@ -1,7 +1,6 @@
 import { useState } from 'react';
-import { ArrowLeft, ArrowRight, ChevronDown, ChevronUp, FolderUp } from 'lucide-react';
+import { ArrowLeft, ArrowRight, ChevronDown, ChevronUp } from 'lucide-react';
 import { PROJECTS } from '../data/portfolioData';
-import { useAssetVault } from '../context/AssetVaultContext';
 import { RoutePath } from '../types/portfolio';
 import { EditableMediaSlot } from './EditableMediaSlot';
 
@@ -11,7 +10,6 @@ interface CaseStudyPageProps {
 }
 
 export function CaseStudyPage({ slug, onNavigate }: CaseStudyPageProps) {
-  const { setDrawerOpen } = useAssetVault();
   const projectIndex = PROJECTS.findIndex((p) => p.slug === slug);
   const project = PROJECTS[projectIndex >= 0 ? projectIndex : 0];
   const prevProject = PROJECTS[(projectIndex - 1 + PROJECTS.length) % PROJECTS.length];
@@ -42,15 +40,6 @@ export function CaseStudyPage({ slug, onNavigate }: CaseStudyPageProps) {
             >
               <ArrowLeft className="h-4 w-4" />
               <span>BACK TO ALL WORK</span>
-            </button>
-
-            <button
-              type="button"
-              onClick={() => setDrawerOpen(true)}
-              className="font-mono-tech inline-flex cursor-pointer items-center gap-2 bg-[#111113] px-3.5 py-2 text-[11px] font-bold tracking-wider text-[#F3EFE6] uppercase hover:bg-[#D9381E]"
-            >
-              <FolderUp className="h-3.5 w-3.5" />
-              <span>UPLOAD CASE ASSETS</span>
             </button>
           </div>
 
@@ -412,7 +401,7 @@ export function CaseStudyPage({ slug, onNavigate }: CaseStudyPageProps) {
                 </h2>
               </div>
               <span className="font-mono-tech text-[11px] text-white/55 uppercase">
-                Click any slot to upload your creative
+                Click any visual to inspect full size
               </span>
             </div>
 

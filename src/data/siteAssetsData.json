@@ -1,0 +1,79 @@
+{
+  "assets": {
+    "altdrx-cover": {
+      "imageUrl": "/assets/portfolio/altdrx-cover.webp"
+    },
+    "altdrx-tv": {
+      "imageUrl": "/assets/portfolio/altdrx-tv.png"
+    },
+    "altdrx-billboard": {
+      "imageUrl": "/assets/portfolio/altdrx-billboard.jpg"
+    },
+    "altdrx-social": {
+      "imageUrl": "/assets/portfolio/altdrx-social.png"
+    },
+    "altdrx-product": {
+      "imageUrl": "/assets/portfolio/altdrx-product.webp"
+    },
+    "adbabu-cover": {
+      "imageUrl": "/assets/portfolio/adbabu-cover.jpg"
+    },
+    "adbabu-case-1": {
+      "imageUrl": "/assets/portfolio/adbabu-case-1.png"
+    },
+    "adbabu-case-2": {},
+    "adbabu-case-3": {},
+    "adbabu-case-4": {},
+    "adbabu-team": {},
+    "campaigns-cover": {
+      "imageUrl": "/assets/portfolio/campaigns-cover.jpg"
+    },
+    "content-cover": {
+      "imageUrl": "/assets/portfolio/content-cover.png"
+    },
+    "content-food-2019": {
+      "imageUrl": "/assets/portfolio/content-food-2019.png"
+    },
+    "content-kathaa": {},
+    "content-video": {},
+    "content-ai": {},
+    "lead-jagsom": {
+      "imageUrl": "/assets/portfolio/lead-jagsom.png"
+    },
+    "lead-kanyathon": {
+      "imageUrl": "/assets/portfolio/lead-kanyathon.png"
+    },
+    "lead-rotaract": {
+      "imageUrl": "/assets/portfolio/lead-rotaract.png"
+    },
+    "lead-nshm": {
+      "imageUrl": "/assets/portfolio/lead-nshm.png"
+    },
+    "award-adtract": {
+      "imageUrl": "/assets/portfolio/award-adtract.png"
+    },
+    "award-marksman": {
+      "imageUrl": "/assets/portfolio/award-marksman.png"
+    },
+    "award-markshetra": {
+      "imageUrl": "/assets/portfolio/award-markshetra.png"
+    },
+    "award-medgala": {
+      "imageUrl": "/assets/portfolio/award-medgala.png"
+    },
+    "award-adspoof": {},
+    "camp-festival": {
+      "imageUrl": "/assets/portfolio/camp-festival.png"
+    },
+    "personal-medium-cover": {
+      "imageUrl": "/assets/portfolio/personal-medium-cover.png"
+    }
+  },
+  "experiments": {
+    "notesTitle": "NOTES & WRITING",
+    "notesText": "Notes, essays, and behind-the-scenes thoughts live here once added to src/data/siteAssetsData.json.",
+    "hasCustomNotes": false,
+    "reelVideoUrl": "/assets/portfolio/experiments-reel.mp4",
+    "reelExternalUrl": ""
+  }
+}

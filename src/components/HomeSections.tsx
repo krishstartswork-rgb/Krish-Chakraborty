@@ -343,7 +343,7 @@ export function HomeSections({ onNavigate }: HomeSectionsProps) {
               </h2>
             </div>
             <span className="font-mono-tech text-[11px] text-[#111113]/65 uppercase">
-              Click any card to read role details or upload photos
+              Click any card to read role details
             </span>
           </div>
 
@@ -401,7 +401,7 @@ export function HomeSections({ onNavigate }: HomeSectionsProps) {
               </h2>
             </div>
             <span className="font-mono-tech text-[11px] text-[#111113]/65 uppercase">
-              Upload award frames, attach links, or toggle details
+              Click any card to toggle details
             </span>
           </div>
 

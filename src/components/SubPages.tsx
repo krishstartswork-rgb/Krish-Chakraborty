@@ -7,7 +7,6 @@ import {
   ChevronUp,
   Copy,
   Download,
-  FolderUp,
   Mail,
   Printer,
   Send,
@@ -24,7 +23,6 @@ import {
   PROFILE,
   PROJECTS,
 } from '../data/portfolioData';
-import { useAssetVault } from '../context/AssetVaultContext';
 import { ProjectCategory, RoutePath } from '../types/portfolio';
 import { EditableMediaSlot } from './EditableMediaSlot';
 import { ExperimentsLabBody } from './ExperimentsLabBody';
@@ -41,7 +39,6 @@ export function WorkArchivePage({ onNavigate }: { onNavigate: (route: RoutePath)
   const [filter, setFilter] = useState<ProjectCategory>('All');
   const [expanded, setExpanded] = useState<Record<string, boolean>>({});
   const [expandedTestimonials, setExpandedTestimonials] = useState<Record<string, boolean>>({});
-  const { setDrawerOpen } = useAssetVault();
 
   const visibleProjects =
     filter === 'All' ? PROJECTS : PROJECTS.filter((p) => p.filterGroup === filter);
@@ -50,23 +47,13 @@ export function WorkArchivePage({ onNavigate }: { onNavigate: (route: RoutePath)
     <div className="bg-[#111113] text-[#F3EFE6]">
       <div className="border-b border-[#111113]/15 bg-[#F3EFE6] text-[#111113]">
         <div className="mx-auto max-w-[1440px] px-5 py-12 sm:px-8 lg:px-12">
-          <div className="flex flex-wrap items-end justify-between gap-6">
-            <div>
-              <p className="font-mono-tech mb-2 text-xs font-bold tracking-widest text-[#D9381E] uppercase">
-                SELECTED WORK ARCHIVE
-              </p>
-              <h1 className="font-display text-[clamp(2.5rem,5.2vw,4.6rem)] leading-[0.95] font-extrabold tracking-[-0.03em] uppercase">
-                BRANDS, CAMPAIGNS &amp; SYSTEMS.
-              </h1>
-            </div>
-            <button
-              type="button"
-              onClick={() => setDrawerOpen(true)}
-              className="font-mono-tech inline-flex cursor-pointer items-center gap-2 bg-[#111113] px-4 py-3 text-xs font-bold tracking-wider text-[#F3EFE6] uppercase hover:bg-[#D9381E]"
-            >
-              <FolderUp className="h-4 w-4" />
-              <span>MANAGE ASSET UPLOADS</span>
-            </button>
+          <div>
+            <p className="font-mono-tech mb-2 text-xs font-bold tracking-widest text-[#D9381E] uppercase">
+              SELECTED WORK ARCHIVE
+            </p>
+            <h1 className="font-display text-[clamp(2.5rem,5.2vw,4.6rem)] leading-[0.95] font-extrabold tracking-[-0.03em] uppercase">
+              BRANDS, CAMPAIGNS &amp; SYSTEMS.
+            </h1>
           </div>
         </div>
       </div>

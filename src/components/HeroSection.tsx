@@ -4,7 +4,6 @@ import {
   ArrowRight,
   ChevronDown,
   ChevronUp,
-  FolderUp,
   Hand,
   MessageSquareQuote,
   Music,
@@ -13,11 +12,9 @@ import {
 } from 'lucide-react';
 import {
   ACTION_REACTIONS,
-  ALL_ASSET_SLOTS,
   CHARACTER_MODES,
   PROFILE,
 } from '../data/portfolioData';
-import { useAssetVault } from '../context/AssetVaultContext';
 import { CharacterMode } from '../types/portfolio';
 import {
   HeroMiniKrish3D,
@@ -32,7 +29,6 @@ interface HeroSectionProps {
 }
 
 export function HeroSection({ onExploreWork, onScrollToWork }: HeroSectionProps) {
-  const { assets, setDrawerOpen } = useAssetVault();
   const [modeIndex, setModeIndex] = useState(0);
   const [lineIndex, setLineIndex] = useState(0);
   const [toyQuip, setToyQuip] = useState<string | null>(null);
@@ -41,7 +37,6 @@ export function HeroSection({ onExploreWork, onScrollToWork }: HeroSectionProps)
   const [heroHovering, setHeroHovering] = useState(false);
   const lastGreetAtRef = useRef<number>(0);
 
-  const uploadedCount = Object.values(assets).filter((a) => Boolean(a.dataUrl)).length;
   const activeMode = CHARACTER_MODES[modeIndex];
   const speechLine = toyQuip || activeMode.lines[lineIndex % activeMode.lines.length];
 
@@ -294,19 +289,6 @@ export function HeroSection({ onExploreWork, onScrollToWork }: HeroSectionProps)
                 <ArrowDownRight className="h-3.5 w-3.5" />
               </button>
             </div>
-          </div>
-
-          <div className="mt-3">
-            <button
-              type="button"
-              onClick={() => setDrawerOpen(true)}
-              className="font-mono-tech inline-flex cursor-pointer items-center gap-2 text-[11px] font-semibold tracking-wider text-[#111113]/75 uppercase underline underline-offset-4 hover:text-[#D9381E]"
-            >
-              <FolderUp className="h-3.5 w-3.5" />
-              <span>
-                ASSET VAULT ({uploadedCount}/{ALL_ASSET_SLOTS.length} POPULATED)
-              </span>
-            </button>
           </div>
         </div>
       </div>

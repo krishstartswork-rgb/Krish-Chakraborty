@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { DoorClosed, DoorOpen, Sparkles } from 'lucide-react';
 
-const BOBBLEHEAD_SRC = '/assets/aistudio/Smiling_South_Asian_Bobblehead_Figurine_8efd44ba.png';
+const BOBBLEHEAD_SRC = '/assets/bobblehead-krish.png';
 
 const DOOR_QUIPS = [
   "Hey! You knocked, so here's the face behind the decks.",
