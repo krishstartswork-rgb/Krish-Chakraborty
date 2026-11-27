@@ -1,7 +1,8 @@
 {
   "assets": {
     "altdrx-cover": {
-      "imageUrl": "/assets/portfolio/altdrx-cover.webp"
+      "imageUrl": "/assets/portfolio/altdrx-cover.webp",
+      "linkUrl": "https://drive.google.com/drive/u/1/folders/1bI08dFMjndV7JblTCun8P5nCKaUdog4a"
     },
     "altdrx-tv": {
       "imageUrl": "/assets/portfolio/altdrx-tv.png"
@@ -16,7 +17,8 @@
       "imageUrl": "/assets/portfolio/altdrx-product.webp"
     },
     "adbabu-cover": {
-      "imageUrl": "/assets/portfolio/adbabu-cover.jpg"
+      "imageUrl": "/assets/portfolio/adbabu-cover.jpg",
+      "linkUrl": "https://drive.google.com/drive/u/1/folders/19XtqyxTgK0YUhVc47t60jFbsx8xp0iCH"
     },
     "adbabu-case-1": {
       "imageUrl": "/assets/portfolio/adbabu-case-1.png"
@@ -26,7 +28,8 @@
     "adbabu-case-4": {},
     "adbabu-team": {},
     "campaigns-cover": {
-      "imageUrl": "/assets/portfolio/campaigns-cover.jpg"
+      "imageUrl": "/assets/portfolio/campaigns-cover.jpg",
+      "linkUrl": "https://www.instagram.com/login_nshmkol/"
     },
     "content-cover": {
       "imageUrl": "/assets/portfolio/content-cover.png"
@@ -47,7 +50,8 @@
       "imageUrl": "/assets/portfolio/lead-rotaract.png"
     },
     "lead-nshm": {
-      "imageUrl": "/assets/portfolio/lead-nshm.png"
+      "imageUrl": "/assets/portfolio/lead-nshm.png",
+      "linkUrl": "https://www.youtube.com/watch?v=RsVnpdC-_Zg"
     },
     "award-adtract": {
       "imageUrl": "/assets/portfolio/award-adtract.png"
@@ -66,14 +70,15 @@
       "imageUrl": "/assets/portfolio/camp-festival.png"
     },
     "personal-medium-cover": {
-      "imageUrl": "/assets/portfolio/personal-medium-cover.png"
+      "imageUrl": "/assets/portfolio/personal-medium-cover.png",
+      "linkUrl": "https://medium.com/@krishchakraborty10"
     }
   },
   "experiments": {
     "notesTitle": "NOTES & WRITING",
-    "notesText": "Notes, essays, and behind-the-scenes thoughts live here once added to src/data/siteAssetsData.json.",
-    "hasCustomNotes": false,
-    "reelVideoUrl": "/assets/portfolio/experiments-reel.mp4",
+    "notesText": "I MAKE THINGS PEOPLE STOP TO LOOK AT.\n\nIt started in 2019 with a camera, a food blog, and an unreasonable obsession with making ordinary things interesting.\n\nSince then, I've worn quite a few hats. Created content for pages like KolkataBuzz, Influnc and Edsolvo, Just Creativity, Ami Hyangla, my college roles etc, experimented with branding through Adbabu, built social media communities, chased viral ideas, worked with brands, and turned random thoughts into campaigns that actually made people pay attention.\n\nSomewhere along the way, I realised I wasn't just interested in creating content. I was fascinated by why stories work, what makes people care, and how a simple idea can become something much bigger.\n\nToday, I work at the intersection of marketing, creativity and growth. And outside of that, I'm exploring storytelling in a whole new way.\n\nBasically, I've spent years trying to understand the internet. Now I want to give it something worth watching.",
+    "hasCustomNotes": true,
+    "reelVideoUrl": "",
     "reelExternalUrl": ""
   }
 }

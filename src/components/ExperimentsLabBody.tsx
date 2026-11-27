@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { ArrowUpRight, Film, Link2 } from 'lucide-react';
 import { SITE_EXPERIMENTS_CONFIG } from '../data/siteAssets';
 
@@ -81,6 +82,11 @@ export function ExperimentsLabBody() {
   const { notesTitle, notesText, reelVideoUrl, reelExternalUrl } = SITE_EXPERIMENTS_CONFIG;
   const resolvedVideo = reelVideoUrl ? resolveReelUrl(reelVideoUrl) : null;
   const externalLink = reelExternalUrl ? normalizeSafeUrl(reelExternalUrl) : null;
+  const [videoFailed, setVideoFailed] = useState(false);
+
+  useEffect(() => {
+    setVideoFailed(false);
+  }, [reelVideoUrl]);
 
   return (
     <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-start">
@@ -114,11 +120,12 @@ export function ExperimentsLabBody() {
                 allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
                 allowFullScreen
               />
-            ) : resolvedVideo?.kind === 'video' ? (
+            ) : resolvedVideo?.kind === 'video' && !videoFailed ? (
               <video
                 src={resolvedVideo.sourceUrl}
                 controls
                 playsInline
+                onError={() => setVideoFailed(true)}
                 className="h-full w-full object-cover"
               />
             ) : (

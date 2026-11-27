@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ArrowUpRight, Image as ImageIcon, Link2, Maximize2, X } from 'lucide-react';
 import { SITE_MEDIA_ASSETS } from '../data/siteAssets';
 import { AssetSlotSpec } from '../types/portfolio';
@@ -51,13 +51,18 @@ export function EditableMediaSlot({
   compact = false,
 }: EditableMediaSlotProps) {
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [imgFailed, setImgFailed] = useState(false);
 
   const staticEntry = SITE_MEDIA_ASSETS[slot.slotId];
   const imageUrl = slot.imageUrl || staticEntry?.imageUrl || '';
   const rawLinkUrl = slot.linkUrl || staticEntry?.linkUrl || '';
   const linkLabel = slot.linkLabel || staticEntry?.linkLabel;
   const savedLink = rawLinkUrl ? normalizeSafeUrl(rawLinkUrl) : null;
-  const hasImage = Boolean(imageUrl);
+  const hasImage = Boolean(imageUrl) && !imgFailed;
+
+  useEffect(() => {
+    setImgFailed(false);
+  }, [imageUrl]);
 
   const surfaceStyles =
     tone === 'light'
@@ -84,6 +89,7 @@ export function EditableMediaSlot({
                 src={imageUrl}
                 alt={slot.title}
                 loading="lazy"
+                onError={() => setImgFailed(true)}
                 onClick={() => setLightboxOpen(true)}
                 className="h-full w-full cursor-pointer object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />
