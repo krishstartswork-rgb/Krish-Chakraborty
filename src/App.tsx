@@ -5,8 +5,6 @@ import { HeroSection } from './components/HeroSection';
 import { HomeSections } from './components/HomeSections';
 import { KineticCursor } from './components/KineticCursor';
 import { Navbar } from './components/Navbar';
-import { RecoverAssetsBanner } from './components/RecoverAssetsBanner';
-import { RecoverAssetsPage } from './components/RecoverAssetsPage';
 import {
   AboutPage,
   ContactPage,
@@ -25,7 +23,6 @@ function parseHashRoute(): RoutePath {
   if (raw === '/experiments') return '/experiments';
   if (raw === '/contact') return '/contact';
   if (raw === '/resume') return '/resume';
-  if (raw === '/recover-assets') return '/recover-assets';
   return '/';
 }
 
@@ -89,18 +86,12 @@ export default function App() {
     if (route === '/resume') {
       return <ResumePage onNavigate={navigate} />;
     }
-    if (route === '/recover-assets') {
-      return <RecoverAssetsPage onNavigate={navigate} />;
-    }
     return null;
   };
 
   return (
     <div className="min-h-screen bg-[#F3EFE6] text-[#111113]">
       <KineticCursor />
-      {route !== '/resume' && route !== '/recover-assets' && (
-        <RecoverAssetsBanner onNavigate={navigate} />
-      )}
       {route !== '/resume' && <Navbar currentRoute={route} onNavigate={navigate} />}
       <main>{renderPage()}</main>
       {route !== '/resume' && <FooterSection onNavigate={navigate} />}

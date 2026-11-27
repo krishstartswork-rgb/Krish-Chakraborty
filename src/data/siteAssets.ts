@@ -1,7 +1,7 @@
 import siteAssetsData from './siteAssetsData.json';
 
 export interface StaticSlotMedia {
-  /** Permanent public path inside public/, e.g. '/assets/portfolio/altdrx-cover.jpg' */
+  /** Permanent public path inside public/, e.g. '/assets/altdrx-cover.webp' */
   imageUrl?: string;
   /** External project/post URL displayed underneath the card */
   linkUrl?: string;
@@ -19,7 +19,7 @@ export interface SiteExperimentsConfig {
 
 /**
  * Permanent, deploy-safe media manifest for all portfolio image & link slots.
- * Files placed in `public/assets/portfolio/` are served at `/assets/portfolio/...`
+ * Files placed in `public/assets/` are served at `/assets/...`
  * on Vercel and visible to every visitor including incognito browsers.
  */
 export const SITE_MEDIA_ASSETS: Record<string, StaticSlotMedia> =

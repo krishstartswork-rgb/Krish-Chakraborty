@@ -1,76 +1,76 @@
 {
   "assets": {
     "altdrx-cover": {
-      "imageUrl": "/assets/portfolio/altdrx-cover.webp",
+      "imageUrl": "/assets/altdrx-cover.webp",
       "linkUrl": "https://drive.google.com/drive/u/1/folders/1bI08dFMjndV7JblTCun8P5nCKaUdog4a"
     },
     "altdrx-tv": {
-      "imageUrl": "/assets/portfolio/altdrx-tv.png"
+      "imageUrl": "/assets/altdrx-tv.png"
     },
     "altdrx-billboard": {
-      "imageUrl": "/assets/portfolio/altdrx-billboard.jpg"
+      "imageUrl": "/assets/altdrx-billboard.jpg"
     },
     "altdrx-social": {
-      "imageUrl": "/assets/portfolio/altdrx-social.png"
+      "imageUrl": "/assets/altdrx-social.png"
     },
     "altdrx-product": {
-      "imageUrl": "/assets/portfolio/altdrx-product.webp"
+      "imageUrl": "/assets/altdrx-product.webp"
     },
     "adbabu-cover": {
-      "imageUrl": "/assets/portfolio/adbabu-cover.jpg",
+      "imageUrl": "/assets/adbabu-cover.jpg",
       "linkUrl": "https://drive.google.com/drive/u/1/folders/19XtqyxTgK0YUhVc47t60jFbsx8xp0iCH"
     },
     "adbabu-case-1": {
-      "imageUrl": "/assets/portfolio/adbabu-case-1.png"
+      "imageUrl": "/assets/adbabu-case-1.png"
     },
     "adbabu-case-2": {},
     "adbabu-case-3": {},
     "adbabu-case-4": {},
     "adbabu-team": {},
     "campaigns-cover": {
-      "imageUrl": "/assets/portfolio/campaigns-cover.jpg",
+      "imageUrl": "/assets/campaigns-cover.jpg",
       "linkUrl": "https://www.instagram.com/login_nshmkol/"
     },
     "content-cover": {
-      "imageUrl": "/assets/portfolio/content-cover.png"
+      "imageUrl": "/assets/content-cover.png"
     },
     "content-food-2019": {
-      "imageUrl": "/assets/portfolio/content-food-2019.png"
+      "imageUrl": "/assets/content-food-2019.png"
     },
     "content-kathaa": {},
     "content-video": {},
     "content-ai": {},
     "lead-jagsom": {
-      "imageUrl": "/assets/portfolio/lead-jagsom.png"
+      "imageUrl": "/assets/lead-jagsom.png"
     },
     "lead-kanyathon": {
-      "imageUrl": "/assets/portfolio/lead-kanyathon.png"
+      "imageUrl": "/assets/lead-kanyathon.png"
     },
     "lead-rotaract": {
-      "imageUrl": "/assets/portfolio/lead-rotaract.png"
+      "imageUrl": "/assets/lead-rotaract.png"
     },
     "lead-nshm": {
-      "imageUrl": "/assets/portfolio/lead-nshm.png",
+      "imageUrl": "/assets/lead-nshm.png",
       "linkUrl": "https://www.youtube.com/watch?v=RsVnpdC-_Zg"
     },
     "award-adtract": {
-      "imageUrl": "/assets/portfolio/award-adtract.png"
+      "imageUrl": "/assets/award-adtract.png"
     },
     "award-marksman": {
-      "imageUrl": "/assets/portfolio/award-marksman.png"
+      "imageUrl": "/assets/award-marksman.png"
     },
     "award-markshetra": {
-      "imageUrl": "/assets/portfolio/award-markshetra.png"
+      "imageUrl": "/assets/award-markshetra.png"
     },
     "award-medgala": {
-      "imageUrl": "/assets/portfolio/award-medgala.png"
+      "imageUrl": "/assets/award-medgala.png"
     },
     "award-adspoof": {},
     "camp-festival": {
-      "imageUrl": "/assets/portfolio/camp-festival.png"
+      "imageUrl": "/assets/camp-festival.png"
     },
     "personal-medium-cover": {
-      "imageUrl": "/assets/portfolio/personal-medium-cover.png",
+      "imageUrl": "/assets/personal-medium-cover.png",
       "linkUrl": "https://medium.com/@krishchakraborty10"
     }
   },

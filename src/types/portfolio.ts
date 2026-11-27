@@ -5,8 +5,7 @@ export type RoutePath =
   | '/about'
   | '/experiments'
   | '/contact'
-  | '/resume'
-  | '/recover-assets';
+  | '/resume';
 
 export type ProjectCategory =
   | 'All'
